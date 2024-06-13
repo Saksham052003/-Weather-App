@@ -2,37 +2,139 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  
+  margin: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 600px) {
+  input {
+    width: 90%;
   }
 }
+.Weather-app {
+  background-image: url('./Background-image/Background image.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Weather-top {
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  background-color: rgba(255, 255, 255, 0.5); 
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.continer{
+  
+  margin-top: 0;
+  padding: 30%;
+  
+}
+.Weather-top-H1{
+  padding-top: 10%;
+  padding-bottom: 20%;
+  font-size: 4rem;
+  color: lightcyan;
+}
+.but-top {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: deepskyblue;
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+.but-top:hover {
+  background-color: rgb(3, 158, 210);
 }
 
-.App-link {
-  color: #61dafb;
+.input-top {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.input-top:hover{
+  transform: scale(1.1);
+}
+.Blur{
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  background-color: rgba(255, 255, 255, 0.5); 
+  margin:0 auto;
+  margin-top: 0; 
+  max-width: 600px;
+  text-align: center;
+}
+.h2-hourly{
+  color: lightcyan;
+}
+.Weather-img{
+  padding-bottom: 10;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hourly-weather {
+  
+  margin-right: 20px;
+  margin-left: 20px;
+  overflow-x:scroll;
+  scrollbar-width: 0px;
+}
+
+.hourly-cards {
+  display: flex;
+  gap: 10px;
+  
+}
+
+.weather-card {
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  background-color: rgba(255, 255, 255, 0.5); 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  flex: 1;
+  min-width: 200px;
+  max-width: 600px; /* Set maximum width for each card */
+}
+.Forecast{
+  color:lightcyan;
+   padding:20px;
+   border-Radius: 5px;
+   box-Shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Forecast-top{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.Forecast-item{
+  color: black;
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  background-color: rgba(255, 255, 255, 0.5); 
+  padding: 15px;
+  border-Radius: 5px; 
+  box-Shadow: 0 2px 4px rgba(0, 0, 0, 0.1) 
+}
+@media (max-width: 600px) {
+  .hourly-weather {
+    margin-right: 0;
+    margin-left: 0;
+    overflow-x:scroll;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
