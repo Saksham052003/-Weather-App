@@ -8,7 +8,7 @@ const Weather = () => {
 
   const fetchWeatherData = async () => {
     try {
-      const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=b04a643500864e21822191558241106&q=${city},${country}&days=1&aqi=yes&alerts=yes`);
+      const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=YOUR_API_KEY&q=${city},${country}&days=1&aqi=yes&alerts=yes`);
       
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
